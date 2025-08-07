@@ -1,0 +1,13 @@
+h1, h2 {
+    color: aliceblue;
+    background-color: black;
+}
+
+a:link {
+  color: black;
+}
+
+.page {
+  width: 666px;
+  margin: 0 auto;
+}
