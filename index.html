@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тудушечка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Что собираемся сегодня делать ?</h1>
+        
+        <div class="controls">
+            <input type="text" id="taskInput" placeholder="Например, помыть аквариум" maxlength="200">
+            <button id="addBtn">Новое дело</button>
+            <button id="saveBtn">Сохранить файл</button>
+            <input type="file" id="loadFile" accept=".json" style="display: none;">
+            <button id="loadBtn">Открыть файл</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(254, 253, 229);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: monospace;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.controls input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none; /* Убирает стандартную рамку браузера */
+}
+
+.controls button {
+    padding: 10px 15px;
+    background: burlywood;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background: rgb(125, 102, 72);
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    min-height: 200px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: move;
+    user-select: none;
+}
+
+.task-item:hover {
+    background: #e9ecef;
+}
+
+.task-item.dragging {
+    opacity: 0.5;
+}
+
+.task-item.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background: #d4edda;
+}
+
+.task-text {
+    flex: 1;
+    padding: 0 10px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-family: serif;
+}
+
+.task-text:focus {
+    outline: 2px solid #dee1e3;
+    background: white;
+}
+
+.task-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-edit {
+    background: yellow;
+    color: #212529;
+    border: 2px solid burlywood;
+    border-radius: 3px;
+}
+
+.btn-edit:hover {
+    background: #e0a800;
+    transform: scale(1.1);
+        border: 2px solid burlywood;
+    border-radius: 3px;
+}
+
+.btn-delete {
+    background: red;
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+        border: 2px solid burlywood;
+    border-radius: 3px;
+}
+
+.btn-delete:hover {
+    background: #c82333;
+    transform: scale(1.1);
+}
+
+.btn-toggle {
+    background: greenyellow;
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+        border: 2px solid burlywood;
+    border-radius: 3px;
+}
+
+.btn-toggle:hover {
+    background: #59c571;
+    transform: scale(1.1);
+}
+
+.empty-list {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}

@@ -1,0 +1,7 @@
+{
+    "debug.onTaskErrors": "debugAnyway",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.autoSave": "onFocusChange"
+}
